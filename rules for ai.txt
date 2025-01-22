@@ -1,0 +1,14 @@
+have termcolor printing every step of the way to inform the user
+every time we use with open use encoding="utf-8"
+major variables should be all caps Variables on top of the script and not user input taking unless otherwise specified
+if there are models in the script like gpt-4o or gpt-4o-mini or o1-mini or o1-preview do not change them as they now exist
+always use try except blocks with descriptive prints where necessary. have informative error printing(with the error itself)
+lets implement every project with seperations of concerns in mind
+for api keys we use system variables not .env file with os.getenv(
+create and update requirements.txt without version numbers
+use chat.completions.create and not chatcompletions endpoint when using openai library, chatcompletions is no longer in use
+for parallel api calls with openai models use from openai import AsyncOpenAI
+
+if you are building web related stuff always use dark mode colorful daisy ui, tailwind and anime.js where necessary to save to save on code. You can use css too for animations where necessary. for when user is waiting always have a nice waiting animation.
+only for fastapi apps: main.py will always be in root folder and run the app wtih main:app 127 with reload
+when working on projects do not remove any functionality that is already working
