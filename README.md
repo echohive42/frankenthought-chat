@@ -33,9 +33,28 @@ An advanced implementation that runs all reasoning models in parallel and synthe
   - Response synthesis combining insights from all models
   - Detailed logging of all responses and final synthesis
   - Commands:
+
     - `--clear`: Clear chat history
     - `--exit`: Exit the chat
     - `--help`: Show available commands
+
+## 🎥 Watch How It's Built!
+
+**[Watch the complete build process on Patreon](https://www.patreon.com/posts/how-to-build-o1-112197565?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link)**
+See exactly how this  was created step by step, with detailed explanations and insights into the development process at my 1000x Cursor Course
+
+
+## ❤️ Join my AI community & Get 400+ AI Projects
+
+This is one of 400+ fascinating projects in my collection! [Support me on Patreon](https://www.patreon.com/c/echohive42/membership) to get:
+
+- 🎯 Access to 400+ AI projects (and growing daily!)
+  - Including advanced projects like [2 Agent Real-time voice template with turn taking](https://www.patreon.com/posts/2-agent-real-you-118330397)
+- 📥 Full source code & detailed explanations
+- 📚 1000x Cursor Course
+- 🎓 Live coding sessions & AMAs
+- 💬 1-on-1 consultations (higher tiers)
+- 🎁 Exclusive discounts on AI tools & platforms (up to $180 value)
 
 ## Setup
 
