@@ -172,6 +172,7 @@ async def process_message(message):
     
     results = await asyncio.gather(*tasks)
     
+    # Store responses with actual model names
     responses = {
         "gemini": results[0],
         "deepseek": results[1],
@@ -179,9 +180,8 @@ async def process_message(message):
         "o1": results[3]
     }
     
-    # Print individual responses
+    # Print individual responses with anonymous model numbers
     print("\nIndividual model responses:")
-    model_names = list(responses.keys())
     for i, response in enumerate(responses.values(), 1):
         print(colored(f"\nModel {i}:", "yellow"))
         print(colored(response, "white"))
@@ -189,16 +189,16 @@ async def process_message(message):
     # Get final synthesized response
     final_response = await synthesize_responses(message, responses)
     
-    # Save to chat history
+    # Save to chat history (anonymized for chat context)
     chat_history.append({"role": "user", "content": message})
     chat_history.append({"role": "assistant", "content": final_response})
     
-    # Save to log file
+    # Save to log file with actual model names
     chat_log = load_chat_log()
     chat_log.append({
         "timestamp": datetime.now().isoformat(),
         "user_message": message,
-        "model_responses": {f"Model {i}": resp for i, resp in enumerate(responses.values(), 1)},
+        "model_responses": responses,  # Original model names preserved in log
         "final_response": final_response
     })
     save_chat_log(chat_log)
