@@ -40,7 +40,7 @@ An advanced implementation that runs all reasoning models in parallel and synthe
 
 ## 🎥 Watch How It's Built!
 
-**[Watch the complete build process on Patreon](https://www.patreon.com/posts/how-to-build-o1-112197565?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link)**
+**[Watch the complete build process on Patreon](https://www.patreon.com/posts/building-chat-o1-120572049?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link)**
 See exactly how this  was created step by step, with detailed explanations and insights into the development process at my 1000x Cursor Course
 
 
